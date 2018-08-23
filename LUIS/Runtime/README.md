@@ -60,10 +60,6 @@ new ApiKeyServiceClientCredentials([LUIS_SUBSCRIPTION_KEY]));
 
 // Predict
 var result = await client.Prediction.ResolveAsync([LUIS_APPLICATION_ID], "Text to Predict or User input");
-
-// Print result
-var json = JsonConvert.SerializeObject(result, Formatting.Indented);
-Console.WriteLine(json);
 ````
 
 The [LuisResult](https://github.com/Azure/azure-sdk-for-net/blob/psSdkJson6/src/SDKs/CognitiveServices/dataPlane/Language/LUIS-Runtime/Generated/Models/LuisResult.cs) object contains the possible detected intents and entities that could be extracted from the input.
