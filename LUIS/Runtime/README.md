@@ -47,9 +47,9 @@ You'll need these two values to configure the LuisDialog through the LuisModel a
 
 One of the key problems in human-computer interactions is the ability of the computer to understand what a person wants, and to find the pieces of information that are relevant to their intent. In the LUIS application, you will bundle together the intents and entities that are important to your task. Read more about [Planning an Application](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/plan-your-app) in the [LUIS Docs](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/).
 
-Once your model is set, you can invoke de LUIS Runtime API to analize user input and obtain its intent and possible entities.
+Once your model is set, you can invoke the LUIS Runtime API to analyze user input and obtain its intent and possible entities.
 
-From .NET you can use the *Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime* NuGet package. Once you have reference the library, you can start making call to the API.
+From .NET you can use the *Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime* NuGet package. Once you have referenced the library, you can start making calls to the API.
 
 ````C#
 using Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime;
