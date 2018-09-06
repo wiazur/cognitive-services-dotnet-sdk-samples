@@ -20,7 +20,7 @@ The first step to using this sample app is to get your Authoring Key. Go to the 
 
 ![Import an Existing Application](images/programmatic-key.png)
 
-Once you get the Authoring Key, edit the [appsettings.json](LUIS-Programmatic.Sample/appsettings.json) file and update the attribute placeholders with the values corresponding to your Key and Endpoint URL, for example (https://westus.api.cognitive.microsoft.com/luis/v2.0)
+Once you get the Authoring Key, edit the [appsettings.json](LUIS-Programmatic.Sample/appsettings.json) file and update the attribute placeholders with the values corresponding to your Key and Endpoint URL, for example (https://westus.api.cognitive.microsoft.com)
 
 ### Highlights
 
