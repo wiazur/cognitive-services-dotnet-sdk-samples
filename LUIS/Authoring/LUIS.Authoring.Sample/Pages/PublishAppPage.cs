@@ -9,12 +9,12 @@
     {
         public Guid AppId { get; set; }
         public string VersionId { get; set; }
-        private string ProgrammaticKey { get; set; }
+        private string AuthoringKey { get; set; }
 
 
         public PublishAppPage(BaseProgram program) : base("Publish", program)
         {
-            ProgrammaticKey = program.ProgrammaticKey;
+            AuthoringKey = program.AuthoringKey;
         }
 
         public override void Display()
@@ -37,7 +37,7 @@
                 try
                 {
                     var result = AwaitTask(Client.Apps.PublishAsync(AppId, publishOptions));
-                    result.EndpointUrl += "?subscription-key=" + ProgrammaticKey + "&q=";
+                    result.EndpointUrl += "?subscription-key=" + AuthoringKey + "&q=";
 
                     Console.WriteLine($"Your app is published. You can now go to test it on {result.EndpointUrl}");
                 }
